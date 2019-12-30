@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #e7e7e7 !important;
+}
+
+.navbar {
+    -webkit-box-shadow: 5px 0px 24px -12px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 5px 0px 24px -12px rgba(0, 0, 0, 0.43);
+    box-shadow: 5px 0px 24px -12px rgba(0, 0, 0, 0.43);
+    background: #fff;
+}
+
+.card {
+    background-color: #fff;
+    border: none !important;
+    border-radius: .25rem;
+    max-width: 33rem;
+    background: #fff;
+    max-height: 23rem;
+    overflow-y: auto;
+}
+
+.btn-primary {
+    background: #377771 !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+.btn-secondary {
+    background: #CF4D6F !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+.btn.focus,
+.btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: none !important;
+}
+
+.form-control {
+    border: 1px solid #ced4da !important;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.modal-header {
+    border-bottom: none !important;
+}
+
+.modal-footer {
+    border-top: none !important;
+}
+
+h6 {
+    font-weight: normal !important;
+    font-size: 1.1rem;
+}
+
+.btn-div {
+    max-width: 33rem;
+}
+
+#add-note {
+    -webkit-box-shadow: 5px 0px 24px -12px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 5px 0px 24px -12px rgba(0, 0, 0, 0.43);
+    box-shadow: 5px 0px 24px -12px rgba(0, 0, 0, 0.43);
+    padding: 1.1rem 1.5rem;
+}
