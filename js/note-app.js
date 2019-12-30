@@ -16,4 +16,6 @@ document.querySelector('#add-note').addEventListener('click', (e) => {
     });
 
     saveNotes(notes);
+
+    renderNotes(notes);
 });

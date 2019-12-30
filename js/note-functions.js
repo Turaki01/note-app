@@ -22,10 +22,14 @@ const timeStamp = function() {
 
 //function to render notes
 const renderNotes = function(notes) {
+
+    document.querySelector('#note-col').innerHTML = ''
+
     const note =  notes.forEach(note => {
         
         const noteEl = generateDOM(note);
-        document.querySelector('#note-col').appendChild(noteEl);
+
+        document.querySelector('#note-col').appendChild(noteEl); 
     });
 
     return note;
@@ -38,11 +42,16 @@ const generateDOM = function(note) {
     const rowDiv = document.createElement('div');
     const  noteTitle = document.createElement('h5');
     const noteBody = document.createElement('p');
+    const lastEdited = document.createElement('p');
 
 
     rowDiv.setAttribute('class', 'col-md-4');
 
     cardDiv.setAttribute('class', 'card p-3 mb-md-4');
+
+    lastEdited.setAttribute('class', 'text-secondary small pt-3');
+
+    lastEdited.textContent = `Last edited:  ${moment(note.updatedAt).fromNow()}`
 
     if(note.title === '') {
         noteTitle.textContent = 'Unnamed'
@@ -56,8 +65,10 @@ const generateDOM = function(note) {
 
     cardDiv.appendChild(noteBody);
 
+    cardDiv.appendChild(lastEdited);
+
     rowDiv.appendChild(cardDiv);
 
     return noteEl.appendChild(rowDiv);
 
-}
+};

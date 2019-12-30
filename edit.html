@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit Note</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <div class="row no-gutters my-5 pt-5">
+        <div class="col-md-8 mx-auto">
+            <div class="card p-5 mx-auto">
+
+                <h4 class="mb-4">Edit Note</h4>
+                <form id="edit-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="title" placeholder="Note Title">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-control" name="body" cols="30" rows="10" placeholder="Note Body"></textarea>
+                    </div>
+
+                    <div class="row pt-3">
+                        <div class="col-md-6"></div>
+                        <div class="col-md-6 text-md-right">
+                            <button class="btn btn-danger px-3">Delete</button>
+                            <button type="submit" class="btn btn-primary px-4">Save</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
